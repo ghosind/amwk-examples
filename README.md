@@ -2,12 +2,16 @@
 
 This repository contains various examples demonstrating how to use the AMWK framework to build web applications. Each example focuses on a specific aspect of the framework, such as building an HTTP web server, handling query parameters, or creating a handler chain. These examples are designed to help you understand how to use the AMWK framework effectively in your own projects.
 
-## Table of Contents
+## Examples
 
-- [Application with HTTP Adapter (web package) Example](web_helloworld/README.md)
-- [Query Parameters Example](query_params/README.md)
-- [Handler Chain Example](handler_chain/README.md)
-- [State Management Example](state_management/README.md)
+| Name | Description | Links |
+|:----:|:-----------:|:----:|
+| Hello World (HTTP Adapter) | A simple example of an HTTP web server. | [Detail](web_helloworld/README.md) \| [Code](web_helloworld/app.go) |
+| Query Parameters | An example demonstrating how to handle query parameters in a web application. | [Detail](query_params/README.md) \| [Code](query_params/app.go) |
+| Request Headers | An example showing how to access and use request headers in your handlers. | [Detail](request_headers/README.md) \| [Code](request_headers/app.go) |
+| Request Body | A simple echo server that reads the request body and sends it back in the response. | [Detail](request_body/README.md) \| [Code](request_body/app.go) |
+| Handler Chain | An example showing how to create a handler chain to process requests in a modular way. | [Detail](handler_chain/README.md) \| [Code](handler_chain/app.go) |
+| State Management | An example illustrating how to manage state in a web application. | [Detail](state_management/README.md) \| [Code](state_management/app.go) |
 
 ## How to Use the Examples
 
@@ -17,9 +21,10 @@ Run the following command in the terminal to install the dependencies for all ex
 go mod tidy
 ```
 
-Then, navigate to the directory of the example you want to run and execute the `main.go` file using the following command:
+Then, navigate to the directory of the example you want to run and execute the `main.go` file. For example:
 
 ```bash
+cd web_helloworld
 go run main.go
 ```
 
