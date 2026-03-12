@@ -24,3 +24,9 @@ curl "http://localhost:8000?name=Bob"
 ```
 
 You should see the response "Hello, World!" when no query parameter is provided, and "Hello, Alice!" or "Hello, Bob!" when the `name` query parameter is set to "Alice" or "Bob", respectively.
+
+## API Reference
+
+- `Context.Query(key string) string`: Returns the value of the specified query parameter. If the parameter is not present, it returns an empty string.
+- `Context.QueryValues(key string) []string`: Returns all values for the specified query parameter. If the parameter is not present, it returns an empty slice.
+- `Context.Queries() map[string][]string`: Returns a map of all query parameters, where the keys are the parameter names and the values are slices of strings containing the parameter values.
